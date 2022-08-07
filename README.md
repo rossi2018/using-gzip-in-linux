@@ -15,8 +15,42 @@ Example to gzip a folder named “newfolder”, and also all the files within th
 $ tar -zcvf newfolder.tar.gz newrfolder/
 ```
 
+The options stand for:
+
+[z]is to convert to gzip (required)
+
+[c]Create. To create new archive (required)
+
+[v] Verbose. To display information as the compression proceed (Not required)
+
+[f]File. Tells tar that the next argument is the name of the tarball. (required)
+
+
 To list the contents of newfolder.tar.gz
 
 ```
-$ tar -tf newrelic.tar.gz
+$ tar -tf newfolder.tar.gz
 ```
+The options stand for 
+
+[t]Test is to check the file intergrity (required)
+
+[f]Tells tar that the next argument is the name of the tarball. (required)
+
+
+To extract the contents of a file or folder 
+
+```
+$ tar -xvf newfolder.tar.gz
+```
+
+The options stand for
+
+[x] extract (required)
+
+[v]verbose. This makes tar give us feedback on its progress. (optional)
+
+[f]Tells tar that the next argument is the name of the tarball. (required)
+
+
+##Using Squashfs compression 
